@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <rect width="32" height="32" rx="6" fill="#1a0e05"/>
+  <!-- Cup -->
+  <path d="M7 13 Q7.5 25 16 25 Q24.5 25 25 13 Z" fill="#2a1505"/>
+  <ellipse cx="16" cy="13" rx="9" ry="3" fill="#3d1f08"/>
+  <!-- Handle -->
+  <path d="M25 16 Q30 16 30 20 Q30 24 25 24" fill="none" stroke="#3d1f08" stroke-width="2.5"/>
+  <!-- Steam -->
+  <path d="M12 10 Q13 6 12 2" fill="none" stroke="#c97c1a" stroke-width="1.5" stroke-dasharray="2,2" opacity="0.8"/>
+  <path d="M16 10 Q17.5 5.5 16 1" fill="none" stroke="#c97c1a" stroke-width="1.5" stroke-dasharray="2,2" opacity="0.8"/>
+  <path d="M20 10 Q21 6 20 2" fill="none" stroke="#c97c1a" stroke-width="1.5" stroke-dasharray="2,2" opacity="0.8"/>
+  <!-- Saucer -->
+  <ellipse cx="16" cy="26" rx="11" ry="3" fill="#241304"/>
+</svg>

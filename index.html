@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ember Roasters – Craft Coffee For Bold Souls. Specialty coffee shop serving handcrafted espresso drinks, pour-overs, and cold brews." />
+  <meta name="keywords" content="coffee shop, specialty coffee, craft coffee, espresso, pour over, Ember Roasters" />
+  <meta name="author" content="Ember Roasters" />
+  <meta property="og:title" content="Ember Roasters – Craft Coffee For Bold Souls" />
+  <meta property="og:description" content="Specialty coffee roasted with passion. Visit us for handcrafted drinks that awaken the bold soul in you." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <title>Ember Roasters – Craft Coffee For Bold Souls</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="nav-logo" aria-label="Ember Roasters Home">
+        <span class="logo-icon" aria-hidden="true">☕</span>
+        <span class="logo-text">Ember Roasters</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+      </button>
+      <ul class="nav-menu" id="nav-menu" role="list">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#about" class="nav-link">Our Story</a></li>
+        <li><a href="#footer" class="nav-link nav-link--cta">Find Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="home" aria-labelledby="hero-heading">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-img-placeholder">
+          <svg class="hero-svg" viewBox="0 0 1440 800" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Dark background -->
+            <rect width="1440" height="800" fill="#1a0e05"/>
+            <!-- Steam wisps -->
+            <g opacity="0.15" fill="none" stroke="#e8a045" stroke-width="2">
+              <path d="M500 600 Q510 560 500 520 Q490 480 500 440" stroke-dasharray="4,6"/>
+              <path d="M520 600 Q535 555 520 510 Q505 465 520 420" stroke-dasharray="4,6"/>
+              <path d="M540 600 Q548 558 540 516 Q532 474 540 432" stroke-dasharray="4,6"/>
+              <path d="M900 600 Q910 560 900 520 Q890 480 900 440" stroke-dasharray="4,6"/>
+              <path d="M920 600 Q935 555 920 510 Q905 465 920 420" stroke-dasharray="4,6"/>
+              <path d="M940 600 Q948 558 940 516 Q932 474 940 432" stroke-dasharray="4,6"/>
+            </g>
+            <!-- Coffee cup silhouette left -->
+            <g transform="translate(420, 500)" opacity="0.3">
+              <ellipse cx="60" cy="10" rx="70" ry="15" fill="#3d1f08"/>
+              <path d="M-10 10 Q0 120 120 120 Q130 10 120 10 Z" fill="#2a1505"/>
+              <path d="M120 50 Q150 50 150 75 Q150 100 120 100" fill="none" stroke="#3d1f08" stroke-width="8"/>
+              <ellipse cx="55" cy="122" rx="75" ry="10" fill="#1a0e05"/>
+            </g>
+            <!-- Coffee cup silhouette right -->
+            <g transform="translate(900, 490)" opacity="0.3">
+              <ellipse cx="60" cy="10" rx="70" ry="15" fill="#3d1f08"/>
+              <path d="M-10 10 Q0 120 120 120 Q130 10 120 10 Z" fill="#2a1505"/>
+              <path d="M120 50 Q150 50 150 75 Q150 100 120 100" fill="none" stroke="#3d1f08" stroke-width="8"/>
+              <ellipse cx="55" cy="122" rx="75" ry="10" fill="#1a0e05"/>
+            </g>
+            <!-- Radial amber glow -->
+            <radialGradient id="glow" cx="50%" cy="65%" r="50%">
+              <stop offset="0%" stop-color="#c97c1a" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="#1a0e05" stop-opacity="0"/>
+            </radialGradient>
+            <rect width="1440" height="800" fill="url(#glow)"/>
+            <!-- Coffee beans scattered -->
+            <g fill="#3d1f08" opacity="0.5">
+              <ellipse cx="200" cy="700" rx="12" ry="7" transform="rotate(-30 200 700)"/>
+              <line x1="200" y1="694" x2="200" y2="706" stroke="#1a0e05" stroke-width="1.5" transform="rotate(-30 200 700)"/>
+              <ellipse cx="1250" cy="680" rx="12" ry="7" transform="rotate(20 1250 680)"/>
+              <line x1="1250" y1="674" x2="1250" y2="686" stroke="#1a0e05" stroke-width="1.5" transform="rotate(20 1250 680)"/>
+              <ellipse cx="350" cy="750" rx="10" ry="6" transform="rotate(15 350 750)"/>
+              <line x1="350" y1="745" x2="350" y2="755" stroke="#1a0e05" stroke-width="1.5" transform="rotate(15 350 750)"/>
+              <ellipse cx="1100" cy="730" rx="10" ry="6" transform="rotate(-20 1100 730)"/>
+              <line x1="1100" y1="725" x2="1100" y2="735" stroke="#1a0e05" stroke-width="1.5" transform="rotate(-20 1100 730)"/>
+              <ellipse cx="720" cy="760" rx="11" ry="6.5" transform="rotate(5 720 760)"/>
+              <line x1="720" y1="754" x2="720" y2="766" stroke="#1a0e05" stroke-width="1.5" transform="rotate(5 720 760)"/>
+            </g>
+          </svg>
+        </div>
+        <div class="hero-overlay" aria-hidden="true"></div>
+      </div>
+      <div class="hero-content container">
+        <p class="hero-eyebrow">Est. 2018 · Small Batch · Hand Roasted</p>
+        <h1 id="hero-heading" class="hero-title">
+          Craft Coffee<br />
+          <span class="hero-title-accent">For Bold Souls</span>
+        </h1>
+        <p class="hero-subtitle">Every cup is a ritual. Every sip, a story. We roast in small batches and brew with intention.</p>
+        <div class="hero-cta">
+          <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+          <a href="#about" class="btn btn-ghost">Our Story</a>
+        </div>
+      </div>
+      <a href="#menu" class="hero-scroll" aria-label="Scroll down to menu">
+        <span class="scroll-arrow" aria-hidden="true">↓</span>
+      </a>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu" aria-labelledby="menu-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">What We Brew</p>
+          <h2 id="menu-heading" class="section-title">Our Drinks</h2>
+          <p class="section-subtitle">From single-origin pour-overs to velvety espresso, every drink is crafted with care.</p>
+        </div>
+        <div class="menu-grid" role="list">
+
+          <!-- Card 1 -->
+          <article class="drink-card" role="listitem" aria-label="Signature Ember Espresso">
+            <div class="drink-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <rect width="80" height="80" rx="12" fill="#1e0f04"/>
+                <g opacity="0.3" fill="none" stroke="#e8a045" stroke-width="1.5">
+                  <path d="M34 30 Q36 22 34 14" stroke-dasharray="3,4"/>
+                  <path d="M40 30 Q43 21 40 12" stroke-dasharray="3,4"/>
+                  <path d="M46 30 Q48 22 46 14" stroke-dasharray="3,4"/>
+                </g>
+                <ellipse cx="40" cy="36" rx="22" ry="6" fill="#3d1f08"/>
+                <path d="M18 36 Q19 60 40 62 Q61 60 62 36 Z" fill="#2a1205"/>
+                <path d="M62 48 Q72 48 72 56 Q72 64 62 64" fill="none" stroke="#3d1f08" stroke-width="5"/>
+                <ellipse cx="40" cy="63" rx="25" ry="5" fill="#150a02"/>
+              </svg>
+            </div>
+            <div class="drink-card-body">
+              <h3 class="drink-name">Signature Ember Espresso</h3>
+              <p class="drink-description">Double shot of our house dark roast pulled to perfection. Deep, bold, and unapologetically intense.</p>
+              <div class="drink-meta">
+                <span class="drink-tag">Espresso</span>
+                <span class="drink-tag">Strong</span>
+              </div>
+            </div>
+            <div class="drink-card-footer">
+              <span class="drink-price">$4.00</span>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="drink-card" role="listitem" aria-label="Amber Flat White">
+            <div class="drink-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <rect width="80" height="80" rx="12" fill="#1e0f04"/>
+                <g opacity="0.25" fill="none" stroke="#e8a045" stroke-width="1.5">
+                  <path d="M37 26 Q39 18 37 10" stroke-dasharray="3,4"/>
+                  <path d="M43 26 Q46 17 43 8" stroke-dasharray="3,4"/>
+                </g>
+                <ellipse cx="40" cy="32" rx="24" ry="7" fill="#c97c1a" opacity="0.8"/>
+                <ellipse cx="40" cy="32" rx="16" ry="4" fill="#f5e6c8" opacity="0.5"/>
+                <path d="M16 32 Q17 62 40 64 Q63 62 64 32 Z" fill="#2a1205"/>
+                <path d="M64 48 Q74 48 74 57 Q74 66 64 66" fill="none" stroke="#3d1f08" stroke-width="5"/>
+                <ellipse cx="40" cy="65" rx="27" ry="5" fill="#150a02"/>
+              </svg>
+            </div>
+            <div class="drink-card-body">
+              <h3 class="drink-name">Amber Flat White</h3>
+              <p class="drink-description">Velvety microfoam meets our medium roast. Smooth, creamy, and warmly balanced with a caramel finish.</p>
+              <div class="drink-meta">
+                <span class="drink-tag">Milk Drink</span>
+                <span class="drink-tag">Smooth</span>
+              </div>
+            </div>
+            <div class="drink-card-footer">
+              <span class="drink-price">$5.50</span>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="drink-card" role="listitem" aria-label="Single Origin Pour Over">
+            <div class="drink-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <rect width="80" height="80" rx="12" fill="#1e0f04"/>
+                <!-- Pour over dripper -->
+                <path d="M26 18 L54 18 L46 42 L34 42 Z" fill="#3d1f08"/>
+                <rect x="37" y="42" width="6" height="8" fill="#3d1f08"/>
+                <!-- Server/cup -->
+                <path d="M22 50 Q22 70 40 70 Q58 70 58 50 Z" fill="#2a1205"/>
+                <ellipse cx="40" cy="50" rx="18" ry="4" fill="#3d1f08"/>
+                <!-- filter lines -->
+                <line x1="40" y1="18" x2="40" y2="42" stroke="#c97c1a" stroke-width="1" opacity="0.5"/>
+                <path d="M40 42 L40 52" stroke="#c97c1a" stroke-width="1.5" opacity="0.8" stroke-dasharray="2,2"/>
+              </svg>
+            </div>
+            <div class="drink-card-body">
+              <h3 class="drink-name">Single Origin Pour Over</h3>
+              <p class="drink-description">Highlight the terroir of a single farm. Bright, complex, and distinct. Rotating origins weekly.</p>
+              <div class="drink-meta">
+                <span class="drink-tag">Pour Over</span>
+                <span class="drink-tag">Rotating</span>
+              </div>
+            </div>
+            <div class="drink-card-footer">
+              <span class="drink-price">$6.50</span>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="drink-card" role="listitem" aria-label="Cold Brew Obsidian">
+            <div class="drink-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <rect width="80" height="80" rx="12" fill="#1e0f04"/>
+                <!-- Tall glass -->
+                <path d="M28 20 L52 20 L50 68 L30 68 Z" fill="#1a0a02" stroke="#3d1f08" stroke-width="2"/>
+                <!-- Liquid level -->
+                <path d="M29.5 35 L50.5 35 L50 68 L30 68 Z" fill="#2a1205"/>
+                <!-- Ice cubes -->
+                <rect x="32" y="22" width="10" height="10" rx="2" fill="#2a4a5a" opacity="0.6"/>
+                <rect x="39" y="24" width="9" height="9" rx="2" fill="#2a4a5a" opacity="0.5"/>
+                <!-- Straw -->
+                <rect x="44" y="10" width="3" height="58" rx="1.5" fill="#c97c1a" opacity="0.8"/>
+              </svg>
+            </div>
+            <div class="drink-card-body">
+              <h3 class="drink-name">Cold Brew Obsidian</h3>
+              <p class="drink-description">Steeped 20 hours in cold water. Impossibly smooth and rich. Served over ice with zero bitterness.</p>
+              <div class="drink-meta">
+                <span class="drink-tag">Cold Brew</span>
+                <span class="drink-tag">Bold</span>
+              </div>
+            </div>
+            <div class="drink-card-footer">
+              <span class="drink-price">$5.00</span>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="drink-card" role="listitem" aria-label="Golden Hour Latte">
+            <div class="drink-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <rect width="80" height="80" rx="12" fill="#1e0f04"/>
+                <!-- Latte art -->
+                <ellipse cx="40" cy="38" rx="26" ry="8" fill="#c97c1a" opacity="0.6"/>
+                <!-- Leaf latte art -->
+                <ellipse cx="40" cy="37" rx="16" ry="4" fill="#f5e6c8" opacity="0.4"/>
+                <path d="M28 37 Q40 30 52 37" fill="none" stroke="#f5e6c8" stroke-width="1" opacity="0.6"/>
+                <path d="M32 35 Q40 28 48 35" fill="none" stroke="#f5e6c8" stroke-width="0.8" opacity="0.5"/>
+                <!-- Cup -->
+                <path d="M14 38 Q15 64 40 66 Q65 64 66 38 Z" fill="#2a1205"/>
+                <path d="M66 50 Q76 50 76 58 Q76 67 66 67" fill="none" stroke="#3d1f08" stroke-width="5"/>
+                <ellipse cx="40" cy="67" rx="28" ry="5" fill="#150a02"/>
+              </svg>
+            </div>
+            <div class="drink-card-body">
+              <h3 class="drink-name">Golden Hour Latte</h3>
+              <p class="drink-description">Our medium roast with turmeric-infused oat milk. A latte kissed with spice and golden warmth.</p>
+              <div class="drink-meta">
+                <span class="drink-tag">Latte</span>
+                <span class="drink-tag">Specialty</span>
+              </div>
+            </div>
+            <div class="drink-card-footer">
+              <span class="drink-price">$6.00</span>
+            </div>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="drink-card" role="listitem" aria-label="Dark Matter Mocha">
+            <div class="drink-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+                <rect width="80" height="80" rx="12" fill="#1e0f04"/>
+                <!-- Whipped cream top -->
+                <path d="M20 40 Q22 28 40 28 Q58 28 60 40" fill="#f5e6c8" opacity="0.5"/>
+                <ellipse cx="40" cy="40" rx="20" ry="5" fill="#f5e6c8" opacity="0.4"/>
+                <!-- Chocolate drizzle -->
+                <path d="M26 36 Q30 44 28 50" fill="none" stroke="#6b3a1f" stroke-width="2" opacity="0.7"/>
+                <path d="M52 34 Q56 42 54 50" fill="none" stroke="#6b3a1f" stroke-width="2" opacity="0.7"/>
+                <!-- Cup -->
+                <path d="M16 42 Q17 68 40 70 Q63 68 64 42 Z" fill="#2a1205"/>
+                <path d="M64 54 Q74 54 74 62 Q74 70 64 70" fill="none" stroke="#3d1f08" stroke-width="5"/>
+                <ellipse cx="40" cy="71" rx="26" ry="5" fill="#150a02"/>
+              </svg>
+            </div>
+            <div class="drink-card-body">
+              <h3 class="drink-name">Dark Matter Mocha</h3>
+              <p class="drink-description">Espresso, house-made dark chocolate, and steamed milk topped with cocoa powder. Indulgence incarnate.</p>
+              <div class="drink-meta">
+                <span class="drink-tag">Mocha</span>
+                <span class="drink-tag">Indulgent</span>
+              </div>
+            </div>
+            <div class="drink-card-footer">
+              <span class="drink-price">$6.50</span>
+            </div>
+          </article>
+
+        </div>
+        <div class="menu-footnote">
+          <p>All drinks available hot or iced. Oat, almond, and soy milk available at no extra charge.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about" aria-labelledby="about-heading">
+      <div class="container about-container">
+        <div class="about-visual" aria-hidden="true">
+          <div class="about-img-frame">
+            <svg viewBox="0 0 480 560" xmlns="http://www.w3.org/2000/svg" class="about-illustration">
+              <!-- Background -->
+              <rect width="480" height="560" rx="16" fill="#1e0f04"/>
+              <!-- Warm glow -->
+              <radialGradient id="warmGlow" cx="50%" cy="60%" r="55%">
+                <stop offset="0%" stop-color="#c97c1a" stop-opacity="0.25"/>
+                <stop offset="100%" stop-color="#1e0f04" stop-opacity="0"/>
+              </radialGradient>
+              <rect width="480" height="560" rx="16" fill="url(#warmGlow)"/>
+              <!-- Burlap texture simulation -->
+              <g opacity="0.04" stroke="#e8a045" stroke-width="1">
+                <line x1="0" y1="40" x2="480" y2="40"/>
+                <line x1="0" y1="80" x2="480" y2="80"/>
+                <line x1="0" y1="120" x2="480" y2="120"/>
+                <line x1="0" y1="160" x2="480" y2="160"/>
+                <line x1="0" y1="200" x2="480" y2="200"/>
+                <line x1="0" y1="240" x2="480" y2="240"/>
+                <line x1="0" y1="280" x2="480" y2="280"/>
+                <line x1="0" y1="320" x2="480" y2="320"/>
+                <line x1="0" y1="360" x2="480" y2="360"/>
+                <line x1="0" y1="400" x2="480" y2="400"/>
+                <line x1="0" y1="440" x2="480" y2="440"/>
+                <line x1="0" y1="480" x2="480" y2="480"/>
+                <line x1="0" y1="520" x2="480" y2="520"/>
+                <line x1="40" y1="0" x2="40" y2="560"/>
+                <line x1="80" y1="0" x2="80" y2="560"/>
+                <line x1="120" y1="0" x2="120" y2="560"/>
+                <line x1="160" y1="0" x2="160" y2="560"/>
+                <line x1="200" y1="0" x2="200" y2="560"/>
+                <line x1="240" y1="0" x2="240" y2="560"/>
+                <line x1="280" y1="0" x2="280" y2="560"/>
+                <line x1="320" y1="0" x2="320" y2="560"/>
+                <line x1="360" y1="0" x2="360" y2="560"/>
+                <line x1="400" y1="0" x2="400" y2="560"/>
+                <line x1="440" y1="0" x2="440" y2="560"/>
+              </g>
+              <!-- Large coffee bag -->
+              <rect x="140" y="80" width="200" height="280" rx="20" fill="#2a1505"/>
+              <rect x="155" y="95" width="170" height="250" rx="12" fill="#3d1f08"/>
+              <!-- Bag top fold -->
+              <path d="M140 140 Q240 120 340 140 L340 80 Q240 60 140 80 Z" fill="#241304"/>
+              <!-- Ember Roasters label -->
+              <rect x="165" y="160" width="150" height="120" rx="8" fill="#1a0e05"/>
+              <rect x="169" y="164" width="142" height="112" rx="6" fill="none" stroke="#c97c1a" stroke-width="1.5"/>
+              <!-- Flame icon on label -->
+              <path d="M240 188 Q248 175 244 168 Q238 178 232 172 Q234 183 228 188 Q224 196 232 202 Q240 206 248 202 Q256 196 240 188 Z" fill="#c97c1a" opacity="0.9"/>
+              <text x="240" y="228" text-anchor="middle" fill="#c97c1a" font-size="11" font-family="Georgia, serif" letter-spacing="3">EMBER</text>
+              <text x="240" y="244" text-anchor="middle" fill="#e8a045" font-size="8" font-family="Georgia, serif" letter-spacing="4">ROASTERS</text>
+              <text x="240" y="264" text-anchor="middle" fill="#8a6040" font-size="7" font-family="Arial, sans-serif" letter-spacing="2">SMALL BATCH</text>
+              <!-- Bag tie -->
+              <rect x="210" y="78" width="60" height="8" rx="4" fill="#1a0e05"/>
+              <!-- Coffee beans scattered at bottom -->
+              <g fill="#6b3a1f" opacity="0.7">
+                <ellipse cx="180" cy="430" rx="14" ry="8" transform="rotate(-25 180 430)"/>
+                <line x1="180" y1="423" x2="180" y2="437" stroke="#3d1f08" stroke-width="2" transform="rotate(-25 180 430)"/>
+                <ellipse cx="220" cy="450" rx="12" ry="7" transform="rotate(15 220 450)"/>
+                <line x1="220" y1="444" x2="220" y2="456" stroke="#3d1f08" stroke-width="2" transform="rotate(15 220 450)"/>
+                <ellipse cx="260" cy="438" rx="13" ry="7.5" transform="rotate(-10 260 438)"/>
+                <line x1="260" y1="431" x2="260" y2="445" stroke="#3d1f08" stroke-width="2" transform="rotate(-10 260 438)"/>
+                <ellipse cx="300" cy="455" rx="11" ry="6.5" transform="rotate(20 300 455)"/>
+                <line x1="300" y1="449" x2="300" y2="461" stroke="#3d1f08" stroke-width="2" transform="rotate(20 300 455)"/>
+                <ellipse cx="200" cy="470" rx="10" ry="6" transform="rotate(-5 200 470)"/>
+                <line x1="200" y1="464" x2="200" y2="476" stroke="#3d1f08" stroke-width="2" transform="rotate(-5 200 470)"/>
+                <ellipse cx="280" cy="472" rx="12" ry="7" transform="rotate(30 280 472)"/>
+                <line x1="280" y1="465" x2="280" y2="479" stroke="#3d1f08" stroke-width="2" transform="rotate(30 280 472)"/>
+                <ellipse cx="160" cy="460" rx="9" ry="5.5" transform="rotate(10 160 460)"/>
+                <line x1="160" y1="455" x2="160" y2="465" stroke="#3d1f08" stroke-width="2" transform="rotate(10 160 460)"/>
+                <ellipse cx="320" cy="440" rx="11" ry="6" transform="rotate(-15 320 440)"/>
+                <line x1="320" y1="434" x2="320" y2="446" stroke="#3d1f08" stroke-width="2" transform="rotate(-15 320 440)"/>
+              </g>
+              <!-- Bottom shadow -->
+              <rect x="0" y="490" width="480" height="70" rx="16" fill="#150a02" opacity="0.6"/>
+              <!-- Tagline at bottom -->
+              <text x="240" y="530" text-anchor="middle" fill="#8a6040" font-size="9" font-family="Georgia, serif" letter-spacing="3" font-style="italic">ROASTED WITH SOUL</text>
+            </svg>
+          </div>
+          <div class="about-badge" aria-hidden="true">
+            <span class="badge-year">Est.</span>
+            <span class="badge-num">2018</span>
+          </div>
+        </div>
+        <div class="about-content">
+          <p class="section-eyebrow">Our Origin Story</p>
+          <h2 id="about-heading" class="section-title">Born From Obsession</h2>
+          <p class="about-text">
+            Ember Roasters began in 2018 in the back of a converted garage in Portland, Oregon. Founder <strong>Maya Chen</strong> had spent a decade as a barista, traveling to coffee farms in Ethiopia, Colombia, and Guatemala. She returned with a singular obsession: to roast beans that tasted exactly like the land they came from.
+          </p>
+          <p class="about-text">
+            What started as weekend roasting sessions for friends quickly became something more. Word spread. The garage became a pop-up. The pop-up became a shop. Today, Ember Roasters sources directly from six farms across three continents, roasting in small batches to ensure every cup is a revelation.
+          </p>
+          <p class="about-text">
+            We believe coffee is more than a morning ritual — it's a connection to soil, sunlight, and the hands that harvested it. Every drink on our menu is a conversation between origin and craft.
+          </p>
+          <div class="about-stats" aria-label="Coffee shop statistics">
+            <div class="stat">
+              <span class="stat-number">6</span>
+              <span class="stat-label">Farm Partners</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Continents</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat">
+              <span class="stat-number">7+</span>
+              <span class="stat-label">Years Roasting</span>
+            </div>
+          </div>
+          <a href="#footer" class="btn btn-primary">Visit Us Today</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer" aria-label="Site footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo footer-logo" aria-label="Ember Roasters Home">
+          <span class="logo-icon" aria-hidden="true">☕</span>
+          <span class="logo-text">Ember Roasters</span>
+        </a>
+        <p class="footer-tagline">Craft Coffee For Bold Souls</p>
+        <div class="footer-social" aria-label="Social media links">
+          <a href="#" class="social-link" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter / X">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53A4.48 4.48 0 0012 8v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-info">
+        <div class="footer-section">
+          <h3 class="footer-heading">Location</h3>
+          <address class="footer-address">
+            <p>247 Burnside Avenue</p>
+            <p>Portland, OR 97209</p>
+            <p><a href="tel:+15035550142" class="footer-link">(503) 555-0142</a></p>
+            <p><a href="mailto:hello@emberroasters.com" class="footer-link">hello@emberroasters.com</a></p>
+          </address>
+        </div>
+        <div class="footer-section">
+          <h3 class="footer-heading">Hours</h3>
+          <ul class="hours-list" role="list">
+            <li class="hours-row">
+              <span class="hours-day">Mon – Fri</span>
+              <span class="hours-time">6:30 AM – 8:00 PM</span>
+            </li>
+            <li class="hours-row">
+              <span class="hours-day">Saturday</span>
+              <span class="hours-time">7:00 AM – 9:00 PM</span>
+            </li>
+            <li class="hours-row">
+              <span class="hours-day">Sunday</span>
+              <span class="hours-time">8:00 AM – 6:00 PM</span>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-nav" role="list">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#menu" class="footer-link">Menu</a></li>
+            <li><a href="#about" class="footer-link">Our Story</a></li>
+            <li><a href="#" class="footer-link">Wholesale</a></li>
+            <li><a href="#" class="footer-link">Gift Cards</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="footer-copy">&copy; 2026 Ember Roasters. All rights reserved.</p>
+        <p class="footer-legal">
+          <a href="#" class="footer-link-sm">Privacy Policy</a>
+          <span aria-hidden="true">·</span>
+          <a href="#" class="footer-link-sm">Terms of Service</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
